@@ -17,7 +17,9 @@ const config: Config = {
         lama:"#F35C7A"
       }
     },
-    
+    colors:{
+      lama : "#f35C7A"
+    }
   },
   plugins: [],
 };
