@@ -10,13 +10,14 @@ const ProductList = () => {
             alt="" 
             fill 
             sizes="25vw"
-            className="absolute object-cover rounded-md z-10 hover:opacity-0 tramsition-opacity easy duration-500 "
+            className="absolute object-cover rounded-md z-10 hover:opacity-0 transition-opacity ease duration-500 "
             />
             <Image src="https://images.pexels.com/photos/29311799/pexels-photo-29311799/free-photo-of-coffee-cup-on-walnut-background.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load"
             alt=""
             fill 
             sizes="25vw"
-            />
+            className="absolute object-cover rounded-md z-10 hover:opacity-0 transition-opacity ease duration-500 "
+           />
             </div>
 
             <div className="flex justify-between ">
@@ -33,7 +34,7 @@ const ProductList = () => {
             alt=""
             fill 
             sizes="25vw"
-            className="absolute object-cover rounded-md z-10 hover:opacity-0 tramsition-opacity easy duration-500 "
+            className="absolute object-cover rounded-md z-10 hover:opacity-0 transition-opacity ease duration-500 "
             />
             <Image src="https://images.pexels.com/photos/31093867/pexels-photo-31093867/free-photo-of-aerial-view-of-calm-blue-ocean-coastline.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load"
             alt=""
@@ -56,7 +57,7 @@ const ProductList = () => {
             alt="" 
             fill 
             sizes="25vw"
-            className="absolute object-cover rounded-md z-10 hover:opacity-0 tramsition-opacity easy duration-500 "
+            className="absolute object-cover rounded-md z-10 hover:opacity-0 transition-opacity ease duration-500 "
             />
             <Image src="https://images.pexels.com/photos/29311799/pexels-photo-29311799/free-photo-of-coffee-cup-on-walnut-background.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load"
             alt=""
@@ -79,7 +80,7 @@ const ProductList = () => {
             alt="" 
             fill 
             sizes="25vw"
-            className="absolute object-cover rounded-md z-10 hover:opacity-0 tramsition-opacity easy duration-500 "
+            className="absolute object-cover rounded-md z-10 hover:opacity-0 transition-opacity ease duration-500 "
             />
             <Image src="https://images.pexels.com/photos/29311799/pexels-photo-29311799/free-photo-of-coffee-cup-on-walnut-background.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load"
             alt=""
