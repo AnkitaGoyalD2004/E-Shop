@@ -1,5 +1,5 @@
 "use client"
-import { createClient, OAuthStrategy } from "@wix/sdk";
+import { createClient } from "@wix/sdk";
 import { collections, products } from "@wix/stores";
 import Cookies from "js-cookie";
 import { createContext, ReactNode } from 'react';
@@ -13,13 +13,13 @@ const wixClient = createClient({
       collections,
     //   currentCart,
     },
-    auth: OAuthStrategy({
-      clientId: process.env.NEXT_PUBLIC_WIX_CLIENT_ID as string,
-      tokens: {
-     refreshToken, 
-     accessToken: {value:"" , expiresAt:0},
-      },
-    }),
+    // auth: OAuthStrategy({
+    //   clientId: process.env.NEXT_PUBLIC_WIX_CLIENT_ID as string,
+    //   tokens: {
+    //  refreshToken, 
+    //  accessToken: {value:"" , expiresAt:0},
+    //   },
+    // }),
   });
   export type WixClient = typeof wixClient;
 
