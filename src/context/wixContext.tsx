@@ -1,5 +1,5 @@
 "use client"
-import { createClient } from "@wix/sdk";
+import { createClient, OAuthStrategy } from "@wix/sdk";
 import { collections, products } from "@wix/stores";
 import Cookies from "js-cookie";
 import { createContext, ReactNode } from 'react';
