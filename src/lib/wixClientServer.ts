@@ -1,32 +1,32 @@
-// // import { orders } from "@wix/ecom";
-// // import { members } from '@wix/members';
-// import { OAuthStrategy, createClient } from "@wix/sdk";
-// import { collections, products } from "@wix/stores";
-// import { cookies } from "next/headers";
+// import { orders } from "@wix/ecom";
+// import { members } from '@wix/members';
+import { OAuthStrategy, createClient } from "@wix/sdk";
+import { collections, products } from "@wix/stores";
+import { cookies } from "next/headers";
 
-// export const wixClientServer = async () => {
-//   let refreshToken;
+export const wixClientServer = async () => {
+  let refreshToken;
 
-//   try {
-//     const cookieStore = cookies();
-//     refreshToken = JSON.parse((await cookieStore).get("refreshToken")?.value || "{}");
-//   } catch (e) {}
+  try {
+    const cookieStore = cookies();
+    refreshToken = JSON.parse((await cookieStore).get("refreshToken")?.value || "{}");
+  } catch (e) {}
 
-//   const wixClient = createClient({
-//     modules: {
-//       products,
-//       collections,
-//       // orders,
-//       // members,
-//     },
-//     auth: OAuthStrategy({
-//       clientId: process.env.NEXT_PUBLIC_WIX_CLIENT_ID!,
-//       tokens: {
-//         refreshToken,
-//         accessToken: { value: "", expiresAt: 0 },
-//       },
-//     }),
-//   });
+  const wixClient = createClient({
+    modules: {
+      products,
+      collections,
+      // orders,
+      // members,
+    },
+    auth: OAuthStrategy({
+      clientId: process.env.NEXT_PUBLIC_WIX_CLIENT_ID!,
+      tokens: {
+        refreshToken,
+        accessToken: { value: "", expiresAt: 0 },
+      },
+    }),
+  });
 
-//   return wixClient;
-// };
+  return wixClient;
+};
